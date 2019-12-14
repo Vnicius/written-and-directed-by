@@ -20,7 +20,11 @@ function IndexPage() {
         <TextInput />
       </div>
       <DownloadButton nodeRef={containerRef} />
-      <a className="repo-link" href="">
+      <a
+        className="repo-link"
+        href="https://github.com/Vnicius/written-and-directed-by"
+        target="blank"
+      >
         The Code
       </a>
     </Layout>
