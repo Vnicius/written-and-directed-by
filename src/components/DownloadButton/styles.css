@@ -1,7 +1,6 @@
 img {
-  position: absolute;
-  bottom: 20%;
-  width: 40px;
+  width: 5vh;
+  margin-top: 20px;
 }
 
 img:hover {
