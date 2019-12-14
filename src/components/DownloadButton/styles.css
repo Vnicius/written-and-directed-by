@@ -3,3 +3,7 @@ img {
   bottom: 20%;
   width: 40px;
 }
+
+img:hover {
+  cursor: pointer;
+}
