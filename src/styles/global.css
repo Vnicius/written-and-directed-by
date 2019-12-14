@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "ITC Benguiat";
+  src: url("../fonts/ITC-Benguiat-Book.woff2") format("woff2");
+}
+
+.container {
+  padding: 5% 0 5% 0;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.repo-link {
+  position: absolute;
+  bottom: 10px;
+  text-decoration: none;
+  color: orange;
+}

@@ -1,21 +1,30 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useRef } from "react"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import Title from "../components/Title"
+import TextInput from "../components/TextInput"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import "../styles/global.css"
+import DownloadButton from "../components/DownloadButton"
+
+function IndexPage() {
+  const containerRef = useRef()
+
+  return (
+    <Layout>
+      <SEO title="Written and directed by... Generator" />
+      <div className={"container"} ref={containerRef}>
+        <Title>WRITTEN AND DIRECTED</Title>
+        <Title>BY</Title>
+        <TextInput />
+      </div>
+      <DownloadButton nodeRef={containerRef} />
+      <a className="repo-link" href="">
+        The Code
+      </a>
+    </Layout>
+  )
+}
 
 export default IndexPage

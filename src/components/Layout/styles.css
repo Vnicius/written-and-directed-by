@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0 5% 0 5%;
+  background-color: black;
+  color: orange;
+  font-family: "ITC Benguiat" !important;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 80%;
+  height: 100vh;
+}

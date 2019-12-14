@@ -1,0 +1,27 @@
+textarea {
+  text-decoration: none;
+  background: none;
+  color: orange;
+  text-align: center;
+  border: none !important;
+  font-size: 15vh;
+  font-family: "ITC Benguiat";
+  resize: none;
+  overflow: hidden;
+  font-weight: bolder;
+  line-height: 80%;
+  max-width: 100%;
+  padding-top: 2%;
+}
+
+textarea:focus {
+  border: none;
+  outline-width: 0;
+}
+
+@media (max-width: 600px) {
+  textarea {
+    font-size: 11vh;
+    padding-top: 3%;
+  }
+}
